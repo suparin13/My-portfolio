@@ -1,0 +1,94 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../assets/bg.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; /* ให้ภาพนิ่งเวลาสกอล์ */
+  color: #333;
+  padding: 0 20px;
+  position: relative;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  margin: 200px;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: center;
+  margin-right: 2px; /* ขยับรูปห่างออกจาก text */
+}
+
+.profile-image img {
+  max-width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.text-content {
+  flex: 2;
+  text-align: left;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.info i {
+  margin-right: 10px;
+  color: #61dafb;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 2.5em;
+  margin-right: 20px;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons a:nth-child(1) { color: #3b5998; } /* Facebook */
+.social-icons a:nth-child(2) { color: #e4405f; } /* Instagram */
+.social-icons a:nth-child(3) { color: #333; }     /* GitHub */
+
+.highlight {
+  color: #ff66cc;
+  font-weight: bold;
+}
+
+.wave {
+  animation: wave-animation 1.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-10deg); }
+  20% { transform: rotate(12deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(9deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}

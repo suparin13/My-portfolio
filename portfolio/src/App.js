@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import ProjectDetails from './components/ProjectDetails'; // Import the ProjectDetails component
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -19,7 +18,6 @@ function App() {
         <Route path="/about" element={<AboutMe />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/project_details" element={<ProjectDetails />} /> {/* Updated route */}
       </Routes>
       <Footer />
     </Router>

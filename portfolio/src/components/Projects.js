@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { FaMobileAlt, FaComments } from 'react-icons/fa';
 import './Projects.css';
+import './Modal.css';
 
 function Projects() {
   const [showModal, setShowModal] = useState(false);
@@ -90,39 +91,40 @@ function Projects() {
         </Row>
       </Container>
 
-      {/* Modal Popup */}
-      <Modal show={showModal} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedProject?.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {selectedProject?.details && (
-            <>
-              <p><strong>Overview:</strong> {selectedProject.details.overview}</p>
+      
+      <Modal show={showModal} onHide={handleClose} centered className="custom-modal">
+  <Modal.Header closeButton>
+    <Modal.Title>{selectedProject?.title}</Modal.Title>
+  </Modal.Header>
+  <Modal.Body>
+    {selectedProject?.details && (
+      <>
+        <p><strong>Overview:</strong> {selectedProject.details.overview}</p>
 
-              <h5>Objectives:</h5>
-              <ul>
-                {selectedProject.details.objectives?.map((obj, idx) => (
-                  <li key={idx}>{obj}</li>
-                ))}
-              </ul>
+        <h5>Objectives:</h5>
+        <ul>
+          {selectedProject.details.objectives?.map((obj, idx) => (
+            <li key={idx}>{obj}</li>
+          ))}
+        </ul>
 
-              <h5>Features:</h5>
-              <ul>
-                {selectedProject.details.features?.map((feature, idx) => (
-                  <li key={idx}>{feature}</li>
-                ))}
-              </ul>
+        <h5>Features:</h5>
+        <ul>
+          {selectedProject.details.features?.map((feature, idx) => (
+            <li key={idx}>{feature}</li>
+          ))}
+        </ul>
 
-              <h5>Technologies Used:</h5>
-              <ul>
-                {selectedProject.details.technologies?.map((tech, idx) => (
-                  <li key={idx}>{tech}</li>
-                ))}
-              </ul>
-            </>
-          )}
-        </Modal.Body>
+        <h5>Technologies Used:</h5>
+        <ul>
+          {selectedProject.details.technologies?.map((tech, idx) => (
+            <li key={idx}>{tech}</li>
+          ))}
+        </ul>
+      </>
+    )}
+  </Modal.Body>
+
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

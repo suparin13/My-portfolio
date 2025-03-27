@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="bg-dark text-white text-center py-3 fixed-bottom">
       <Container>
-        <p className="mb-0">&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p className="mb-0">&copy; {new Date().getFullYear()} Suparin Srikhloi. All rights reserved.</p>
       </Container>
     </footer>
   );

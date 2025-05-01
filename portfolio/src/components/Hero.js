@@ -13,14 +13,15 @@ function Hero() {
             <img src={profileImage} alt="Profile" />
           </div>
           <div className="text-content">
-            <h1><span className="highlight">Suparin Srikhloi</span> <span className="wave">👋</span></h1>
+            <h1><span className="highlight">Hi! Suparin Srikhloi</span> <span className="wave">👋</span></h1>
             <p className="subtitle">I'm a student.</p>
             <div className="info">
               <p><i className="fas fa-mug-hot"></i> Recharge with cocoa</p>
               <p><i className="fas fa-globe"></i> I live in Chanthaburi Province</p>
               <p><i className="fas fa-university"></i> Studying at KMUTNB</p>
               <p><i className="fas fa-laptop-code"></i> Electronics Computer Technology</p>
-              <p><i className="fas fa-envelope"></i> suparin0282k@gmail.com</p>
+              <p><i className="fas fa-envelope"></i> suparin0282@gmail.com</p>
+              <p><i className="fas fa-phone"></i>080-047-2181</p>
             </div>
 
             {/* เพิ่มส่วนนี้: Social Icons */}

@@ -1,0 +1,101 @@
+/* ปรับแต่ง Modal ให้ดูสะอาดและพรีเมียม */
+.custom-modal .modal-content {
+    background: #ffffff; /* พื้นหลังสีขาว */
+    color: #333; /* ตัวอักษรสีเข้ม */
+    border-radius: 16px; /* มุมโค้งนุ่มนวล */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* เงาเบา ๆ */
+    border: none;
+    padding: 10px;
+  }
+  
+  /* Header สไตล์หรู */
+  .custom-modal .modal-header {
+    border-bottom: 1px solid #eee; /* เส้นแบ่งบาง ๆ */
+    background: rgba(0, 0, 0, 0.02); /* สีจาง ๆ */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 16px;
+  }
+  
+  /* ปรับปุ่มปิดให้ดูโมเดิร์น */
+  .custom-modal .modal-header .btn-close {
+    filter: grayscale(50%);
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  
+  .custom-modal .modal-header .btn-close:hover {
+    opacity: 1;
+    transform: scale(1.1); /* ขยายเล็กน้อยตอน hover */
+  }
+  
+  /* เนื้อหา Modal */
+  .custom-modal .modal-body {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  /* ปรับแต่ง Footer */
+  .custom-modal .modal-footer {
+    background: transparent;
+    border-top: 1px solid #eee;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 12px;
+  }
+  
+  /* List มินิมอลหรูหรา */
+  .custom-modal ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .custom-modal li {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background: #f8f8f8;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .custom-modal li::before {
+    content: "✔"; /* เพิ่มไอคอนติ๊ก */
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Hover effect */
+  .custom-modal li:hover {
+    background: #f0f0f0;
+  }
+  
+  /* ปุ่ม */
+  .custom-modal .modal-footer button {
+    border-radius: 8px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  .custom-modal .modal-footer button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* ปรับขนาด Modal */
+  @media (min-width: 768px) {
+    .custom-modal .modal-dialog {
+      max-width: 520px;
+    }
+  }
+  
